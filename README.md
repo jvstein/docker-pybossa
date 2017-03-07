@@ -18,6 +18,7 @@ If you prefer to run things by hand, this should get you going. Modify the POSTG
       jvstein/pybossa \
       python cli.py db_create
     ```
+
 0. Start the Redis master.
     ```
     docker run -d --name redis-master redis:3.0-alpine
@@ -67,7 +68,6 @@ the consequences and know how to ensure your data is preserved. However, for
         postgres:9.6-alpine
     ```
 
-0. Add `--link pybossa-db:db` to the background and frontend pybossa commands
-   above to link to your database.
+0. Add `--link pybossa-db:db` to the `pb-worker` and `pybossa` startup commands.
 
 [db]: http://docs.pybossa.com/en/latest/install.html#configuring-the-databasest/install.html
