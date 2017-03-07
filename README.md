@@ -1,10 +1,14 @@
 # PyBossa Docker container
 Docker container for running PyBossa.
 
-# Quick Start
-This assumes that you've got an external database already set up and
-initialized. Modify the POSTGRES_URL variable accordingly. If you haven't done
-that yet, see the [Initialize Database](#initialize-database) section below.
+# Docker-Compose Quick Start
+Use my [docker-compose file](https://github.com/jvstein/docker-compose-pybossa)
+to set up a quick and dirty PyBossa environment for evaluation or test purposes.
+
+**WARNING: All data will be lost when the container is removed.**
+
+# Manual Quick Start
+If you prefer to run things by hand, this should get you going. Modify the POSTGRES_URL variable accordingly.
 
 0. (One-time) Set up a PostgreSQL database according to the [Pybossa install docs][db] or follow the instructions in the [Run PostgreSQL in Docker](#run-postgresql-in-docker) section.
 0. (One-time) Create the PyBossa tables in your database.
